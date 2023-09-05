@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="index.css"/>
+    <!-- Favicon -->
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+</head>
+<body>
+    <div class="container">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <img class="logo" src="./Assets/Spotify-logo.png" alt="spotify-logo">
+            
+            <!-- sidebar menu -->
+            <ul class="menu">
+                <li>
+                    <img src="./Assets/home.svg" alt="home-logo"/>
+                    <a class="sidebar-title" href="#">Home</a>
+                </li>
+                <li>
+                    <img src="./Assets/search.svg" alt="search-logo"/>
+                    <a  href="#"><input class="sidebar-title" type="text" placeholder="Search"/></a>
+                </li>
+                <li>
+                    <img src="./Assets/library.svg" alt="library-logo"/>
+                    <a class="sidebar-title" href="playlist.html">Your Library</a>
+                </li>
+                <div class="like-container">
+                    <li>
+                        <img src="./Assets/plus.png" alt="plus-logo"/>
+                        <a class="sidebar-title" href="#">Create Playlist</a>
+                    </li>
+                    <li>
+                        <img src="./Assets/purpleheart.png" alt="like-logo"/>
+                        <a class="sidebar-title" href="playlist.html">Liked Songs</a>
+                    </li>
+                    <li>
+                        <img src="./Assets/hotspot.png" alt="hotspot-logo"/>
+                        <a class="sidebar-title" href="#">Your Episodes</a>
+                    </li>
+                </div>
+                <div class="like-container playlist-container">
+                    <li><img class="playlist-logo" aria-hidden="false" draggable="false" loading="lazy" src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/aAbca4VNfzWuUCQ_FGiEFA==/bmVuZW5lbmVuZW5lbmVuZQ==" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"><a class="sidebar-title" href="#">Discover Weekly</a></li>
+                    <li><img class="playlist-logo" aria-hidden="false" draggable="false" loading="lazy" src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebcb6926f44f620555ba444fca/1/en/default" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"><a class="sidebar-title" href="#">Daily Mix 1</a></li>
+                    <li><img class="playlist-logo" aria-hidden="true" draggable="false" loading="eager" src="https://mosaic.scdn.co/60/ab67616d00001e025ce0fbd16dba08ae792dc1cfab67616d00001e0274164dc6fb6a320abf6a34fdab67616d00001e02a6ba4e11adddb086d73d4474ab67616d00001e02d9cb448f74614dd0cc3521a9" data-testid="entity-image" alt="Attack on Titan - Complete Soundtrack" class="mMx2LUixlnN_Fu45JpFB iJp40IxKg6emF6KYJ414 Yn2Ei5QZn19gria6LjZj" srcset="https://mosaic.scdn.co/60/ab67616d00001e025ce0fbd16dba08ae792dc1cfab67616d00001e0274164dc6fb6a320abf6a34fdab67616d00001e02a6ba4e11adddb086d73d4474ab67616d00001e02d9cb448f74614dd0cc3521a9 30w, https://mosaic.scdn.co/60/ab67616d00001e025ce0fbd16dba08ae792dc1cfab67616d00001e0274164dc6fb6a320abf6a34fdab67616d00001e02a6ba4e11adddb086d73d4474ab67616d00001e02d9cb448f74614dd0cc3521a9 60w, https://mosaic.scdn.co/300/ab67616d00001e025ce0fbd16dba08ae792dc1cfab67616d00001e0274164dc6fb6a320abf6a34fdab67616d00001e02a6ba4e11adddb086d73d4474ab67616d00001e02d9cb448f74614dd0cc3521a9 150w, https://mosaic.scdn.co/300/ab67616d00001e025ce0fbd16dba08ae792dc1cfab67616d00001e0274164dc6fb6a320abf6a34fdab67616d00001e02a6ba4e11adddb086d73d4474ab67616d00001e02d9cb448f74614dd0cc3521a9 300w, https://mosaic.scdn.co/640/ab67616d00001e025ce0fbd16dba08ae792dc1cfab67616d00001e0274164dc6fb6a320abf6a34fdab67616d00001e02a6ba4e11adddb086d73d4474ab67616d00001e02d9cb448f74614dd0cc3521a9 320w, https://mosaic.scdn.co/640/ab67616d00001e025ce0fbd16dba08ae792dc1cfab67616d00001e0274164dc6fb6a320abf6a34fdab67616d00001e02a6ba4e11adddb086d73d4474ab67616d00001e02d9cb448f74614dd0cc3521a9 640w"><a class="sidebar-title" href="#">Attack on Titan - Complete Soundtrack</a></li>
+                    <li><img class="playlist-logo" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000026c2758518dd33c89085f56b5" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"><a class="sidebar-title" href="#">Bollywood Mush</a></li>
+                    <li><img class="playlist-logo" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002defac4207a5f09c1b90ea69d" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj"><a class="sidebar-title" href="#">Top Hits of 2015</a></li>
+                </div>
+                <div class="download-img">
+                    <li>
+                        <img  src="./assets/download.png" alt="download-logo">
+                        <a class="sidebar-title" href="#">Install App</a> 
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- sidebar end -->
+
+        <!-- main page -->
+        <div class="right-main">
+            <!-- main-top-header Section -->
+            <section id="main-top-header">
+                <div class="top-header">
+                    <div class="nav-btn">
+                        <img id="btn" src="./assets/backward.png" style="margin-right: 1rem;" alt="backward">
+
+                        <a href="playlist.html"><img id="btn" src="./assets/forward.png" alt="forward"></a>
+                    </div>
+                    <div class="profile">
+                        <img class="profile-img" src="./assets/profile.jpeg" alt="profile">
+                        <p class="sidebar-title">Jay</p>
+                        <img id="btn" src="./assets/down.png" style="margin-right: 1rem;" alt="down">
+                    </div>
+                </div>
+            </section>
+
+            <section id="greeting">
+                <div class="greeting">
+                    <h3>Good morning</h3>
+                </div>
+            </section>
+            <section id="t-playlist">
+                <div class="title-playlist">
+                    <div class="playlist">
+                        <img style="height: 6.2rem;" src="./assets/Purple-big.png" alt="man">
+                        <div class="col-flex">
+                            <p style="font-size: 17px;">Liked Songs</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img style="height: 6.2rem;" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67656300005f1f9812c69c2ae290458bfa2eac" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="col-flex">
+                            <p style="font-size: 17px;">S2 Episode 10: Ek Bada Kadam</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img style="height: 6.2rem;" aria-hidden="false" draggable="false" loading="lazy" src="https://seed-mix-image.spotifycdn.com/v6/img/artist/4YRxDV8wJFPHPTeXepOstw/en/default" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="col-flex">
+                            <p style="font-size: 17px;">Arijit Singh Mix</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img style="height: 6.2rem;" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000026c2758518dd33c89085f56b5" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="col-flex">
+                            <p style="font-size: 17px;">Bollywood Mush</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img style="height: 6.2rem;" aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002b5df54673da0935a538c8e48" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                        <div class="col-flex">
+                            <p style="font-size: 17px;">Mega Hit Mix</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img style="height: 6.2rem;" src="./assets/marshmellow.png" alt="marshmellow">
+                        <div class="col-flex">
+                            <p style="font-size: 17px;">Dance / Electronic Mix</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="playlist-albums">
+                    <div class="list-heading">
+                        <h4>Shows you might like</h4>
+                        <p style="margin-right: 190px; color: #B3B3B3; font-size: 15px;">SEE ALL</p>
+                    </div>
+                    <div class="albums">
+                        <div class="music-card">
+                            <a href="playlist.html"><img src="./assets/dualipa.png" alt="dualipa"></a>
+                            <div class="text">
+                                <p>Pop Right Now...</p>
+                                <p id="muted">Dua Lipa</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <a href="#"><img src="./assets/12number.jfif" alt="12number"></a>
+                            <div class="text">
+                                <p>Twelve ...</p>
+                                <p id="muted">Bilal Saeed</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="./assets/rectangle21.png" alt="rectangle21">
+                            <div class="text">
+                                <p>Weekly Motivation</p>
+                                <p id="muted">Ben Ina Scott</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="./assets/rectangle22.png" alt="rectangle22">
+                            <div class="text">
+                                <p>MEDITATION SELF</p>
+                                <p id="muted">Ibn Hussain Aleen</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="./assets/rectangle23.png" alt="rectangle23">
+                            <div class="text">
+                                <p>Words beyond act...</p>
+                                <p id="muted">Samuel Scott</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="./assets/rectangle16.png" alt="rectangle16">
+                            <div class="text">
+                                <p>The Alexa Show</p>
+                                <p id="muted">Adriana Tom</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="./assets/man.png" alt="man">
+                            <div class="text">
+                                <p>Neffex Playlist</p>
+                                <p id="muted">Neffex</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="./assets/marshmellow.png" alt="marshmellow">
+                            <div class="text">
+                                <p>Dance/Electronic Mix</p>
+                                <p id="muted">Marshmellow</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f00000002bb356f4951404ce7362ab02c" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt Yn2Ei5QZn19gria6LjZj">
+                            <div class="text">
+                                <p>Bollywood Butter</p>
+                                <p id="muted">B bole toh biggest...</p>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img aria-hidden="false" draggable="false" loading="lazy" src="https://i.scdn.co/image/ab67706f000000025657daa09c838f52be189545" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB SKJSok3LfyedjZjujmFt yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj">
+                            <div class="text">
+                                <p>Hot Hits Punjabi</p>
+                                <p id="muted">Catch the hottest Punjabi.. </p>
+                            </div>
+                        </div>
+                           
+                    </div>
+                </section>
+            </section>
+            <br>
+        </div>
+
+        <div style="margin-bottom: 20px;" class="footer-music-player">
+
+            <div class="current-play">
+                <img class="music-art" aria-hidden="false" draggable="false" loading="eager" src="https://i.scdn.co/image/ab67616d0000485102ea9d69484ed871c3e34bea" alt="" class="mMx2LUixlnN_Fu45JpFB rkw8BWQi3miXqtlJhKg0 Yn2Ei5QZn19gria6LjZj" width="40" height="40">
+                <div style="margin-left: 20px;" class="col-flex">
+                    <marquee behavior="" scrollamount="4">
+                        <p class="song-title" style="color: #FFF; font-size: 17px;">Heeriye (feat. Arijit Singh)</p>
+                    </marquee>
+                    <p style="color: #B3B3B3; font-size: 13px;">Jasleen Royal, Arijit Singh...</p>
+                </div>
+                <img style="margin-left: 13px; width: 25px;" id="green_heart" src="./assets/gheart.svg" alt="green_heart">
+            </div>
+
+            <div class="player-center">
+
+                <div class="player-controls">
+                    <img id="btn" style="height: 1.6rem; margin-right: 1rem;" src="./assets/shuffle.png" />
+                    <img id="btn" style="height: 1.5rem; margin-right: 1rem;" src="./assets/previous.png" />
+                    <img id="btn" style="height: 2.5rem; margin-right: 1rem" src="./assets/gridicons_play.png" />
+                    <img id="btn" style="height: 1.5rem; margin-right: 1rem;" src="./assets/next.png" />
+                    <img id="btn" style="height: 1.5rem; margin-right: 1rem;" src="./assets/loop.png" />
+                </div>
+                <div class="player-timeline">
+                    <span class="current-time">0:00</span>
+                    <input type="range" class="timeline-slider" min="0" max="100" step="1" value="0" />
+                    <span class="total-time">3:52</span>
+                </div>
+            </div>
+
+            <div class="volume-controls">
+                <img id="btn" src="./assets/microphone.png" style="height: 1.3rem; margin-right: 0.3rem;"
+                    alt="microphone" />
+                <img id="btn" src="./assets/query-queue.png"
+                    style="height: 1.5rem; width: 1.5rem; margin-top: -0.2rem; margin-right: 0.5rem;"
+                    alt="query-queue" />
+                <img id="btn" src="./assets/carbon_laptop.png" style="height: 1.3rem; margin-right: 0.5rem;"
+                    alt="carbon_laptop" />
+                <img id="btn" src="./assets/speaker-white.png" style="height: 1.3rem; margin-right: 0.5rem;"
+                    alt="speaker-white" />
+                <!-- <img src="volume-bar.png" style="height: 1rem; margin-right: 1rem; opacity: 0.8" alt="Fullscreen" /> -->
+                <input type="range" class="volume-slider" min="0" max="100" step="1" value="50" />
+                <img id="btn" src="./assets/strech-speaker.png"
+                    style="height: 1rem; margin-top: 0.3rem; margin-left: 0.5rem;" alt="strech-speaker" />
+            </div>
+            
+        </div>
+        
+        </div>
+        
+    </div>
+    <div class="footer-stripe footer-music-player">
+        <i style="margin-right: 5px;" class="fa-solid fa-volume-high fa-fade"></i>
+        <p>Listening on ASUS-ROG-G531GT</p>
+    </div>
+</body>
+</html>
